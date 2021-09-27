@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!--how to display the content-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--visible area of port-->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/Style.css">
+
+    <title>Measurement</title>
+</head>
+
+<body>
+    <!-- As a heading -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light justify-content-center">
+        <a class="navbar-brand abs" href="#">Quanment</a>
+
+        <div class="navbar-collapse collapse" id="collapsingNavbar">
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="" data-target="#myModal" data-toggle="modal">History</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary justify-content-center">
+        <a class="navbar-brand abs heading" href="#">Welcome to Quanment Measurement</a>
+    </nav>
+
+
+
+    <div class="main">
+
+        <div class="container">
+            <div class="row">
+
+                <div class=" col-md-4 col-lg-3 col-sm-12 ">
+                    <p class="choose">CHOOSE TYPE</p>
+                    <div class="card" id=card3>
+                        <a href="index.html"> <img class="card-img-top" src="assets/scale.svg" alt="Card image cap"></a>
+
+                        <div class="card-body" style="text-align: center;">
+                            <label style="color:#0EC098 ;font: normal normal bold 15px/19px Montserrat;">Length</label>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-sm-12" style="margin-top: 40px;">
+                    <div class="card" id="card2">
+                        <a href="temperature.html"><img class="card-img-top" src="assets/hot.svg"
+                                alt="Card image cap"></a>
+                        <div class="card-body" style="text-align: center;">
+                            <label
+                                style="color:#FD5160; font-weight: 500; font: normal normal bold 15px/19px Montserrat;">Temperature</label>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class=" col-md-4 col-lg-3 col-sm-12  " style="margin-top: 40px;">
+                    <div class="card" id="card1">
+                        <a href="Volume.html"><img class="card-img-top " src="assets/beaker (2).svg"
+                                alt="Card image cap"></a>
+
+                        <div class="card-body" style="text-align: center;">
+                            <label style="color:#7224FF ;font: normal normal bold 15px/19px Montserrat;">Volume</label>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="row">
+            <!--Volume-->
+            <div class="col-xl-6 col-lg-6 col-sm-12 col-xs-12 col-md-6 pt-5 d-none  ">
+                <p style="width: 300px; margin-left:auto;">FROM</p>
+                <div class="card card-one">
+
+                    <div class="card-body">
+                        <h5 class="card-title">1</h5>
+
+                        <hr>
+                        <select>
+                            <option value="meter">Meter</option>
+                            <option value="kilometer">kilometer</option>
+                            <option value="Centimeter">Centimeter</option>
+                            <option value="meter">MicroMeter</option>
+                            <option value="kilometer">Mile</option>
+                            <option value="Centimeter">Foot</option>
+                            <option value="Centimeter">Inch</option>
+
+                        </select>
+
+
+                    </div>
+                </div>
+            </div>
+            <!--Temperature-->
+            <div class="col-xl-6 col-lg-6 col-sm-12 col-xs-12 col-md-6 pt-5  ">
+                <p style="width: 300px; margin-left:auto;">FROM</p>
+                <div class="card card-one">
+
+                    <div class="card-body">
+                        <h5 class="card-title">0</h5>
+
+                        <hr>
+                        <div class="dropdown show">
+                            <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Celsius
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Celsius</a>
+                                <a class="dropdown-item" href="#">Fahrenheit</a>
+                                <a class="dropdown-item" href="#">Kelvin</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--Length-->
+            <div class="col-xl-6 col-lg-6 col-sm-12 col-xs-12 col-md-6 pt-5 d-none">
+                <p style="width: 300px; margin-left:auto;">FROM</p>
+                <div class="card card-one">
+
+                    <div class="card-body">
+
+                        <input type="text" placeholder="Input" id="input" value="1"
+                            style="border-color: transparent; font-weight: 500; font-size:large;">
+
+                        <hr>
+                        <select id="inputType" style="width: 250px; border-color: transparent;">
+                            <option value="meter">Meter</option>
+                            <option value="kilometer">kilometer</option>
+                            <option value="Centimeter">Centimeter</option>
+                            <option value="meter">MicroMeter</option>
+                            <option value="kilometer">Mile</option>
+                            <option value="Centimeter">Foot</option>
+                            <option value="Centimeter">Inch</option>
+                        </select>
+
+
+
+                    </div>
+                </div>
+            </div>
+            <!--Volume-->
+            <div class="col-xl-6 col-lg-6 col-sm-12 col-xs-12 col-md-6 pt-5 d-none">
+                <p class="to" style="width:300px;">TO</p>
+                <div class="card card-two">
+
+                    <div class="card-body">
+                        <h5 class="card-title">1000</h5>
+
+                        <hr>
+                        <div class="dropdown show">
+                            <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Mililitres
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Litres</a>
+                                <a class="dropdown-item" href="#">Mililitres</a>
+                                <a class="dropdown-item" href="#">Gallons</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--Temperature-->
+            <div class="col-xl-6 col-lg-6 col-sm-12 col-xs-12 col-md-6 pt-5 ">
+                <p class="to" style="width:300px;">TO</p>
+                <div class="card card-two">
+
+                    <div class="card-body">
+                        <h5 class="card-title">36</h5>
+
+                        <hr>
+                        <div class="dropdown show">
+                            <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Fahrenheit
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Celsius</a>
+                                <a class="dropdown-item" href="#">Fahrenheit</a>
+                                <a class="dropdown-item" href="#">Kelvin</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--Length-->
+            <div class="col-xl-6 col-lg-6 col-sm-12 col-xs-12 col-md-6 pt-5 d-none ">
+                <p class="to" style="width:300px;">TO</p>
+                <div class="card card-two">
+
+                    <div class="card-body">
+
+                        <input type="text" placeholder="Result" id="result" value="100"
+                            style="border-color: transparent; font-weight: 500; font-size:large;">
+
+                        <hr>
+                        <select id="resultType" style="width: 250px; border-color: transparent;">
+                            <option value="Centimeter">Centimeter</option>
+                            <option value="kilometer">kilometer</option>
+                            <option value="Meter">Meter</option>
+                            <option value="meter">MicroMeter</option>
+                            <option value="kilometer">Mile</option>
+                            <option value="Centimeter">Foot</option>
+                            <option value="Centimeter">Inch</option>
+                        </select>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
